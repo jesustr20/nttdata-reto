@@ -22,7 +22,6 @@ export default async function apiFetch(endpoint, {method, headers, body} = {}){
     try{
       data = await response.json();
     }catch(error){
-      console.log(error)
       throw new Error(response.statusText)
     }
     throw new Error(data.errors);

@@ -26,7 +26,7 @@ function JarvisData(){
     picture: item.picture.thumbnail
   }))
 
-  const columnTable = columns.map(item => item.dataIndex)
+  const columnTable = columns?.map(item => item.dataIndex )
 
   const csvReport = {
     filename: 'jarvis-data.csv',

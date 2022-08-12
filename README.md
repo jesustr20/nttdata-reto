@@ -22,6 +22,6 @@ Existen 2 botones de descarga:
 "Download from Table": descargara los 15 usuarios mostrados en la tabla.
 
 ### Librerias usadas con React
-Ant desing: para el manejo de tablas
-react-csv: para exportar la data en csv
+Ant desing: para el manejo de tablas - 
+react-csv: para exportar la data en csv - 
 fetch: para solicitar los datos a la api

@@ -56,8 +56,8 @@ function JarvisData(){
       <Button type="primary" href={dataUrl} icon={<DownloadOutlined />} style={{margin:"10px"}}>
         Download from Url
       </Button>
-      <Button type="link" icon={<DownloadOutlined />}>
-      <CSVLink {...csvReport}>Download from Table</CSVLink>
+      <Button type="link" style={{background: "#80e27f", borderColor: "#1890ff"}} danger ghost icon={<DownloadOutlined />}>
+        <CSVLink {...csvReport} style={{color: "black"}}>Download from Table</CSVLink>
       </Button>
       <br/>
     </div>

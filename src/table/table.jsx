@@ -25,13 +25,19 @@ function JarvisData(){
     nat: item.nat,
     picture: item.picture.thumbnail
   }))
+ 
+  const csvExport = []
+  const contentColumns = []
 
-  const columnTable = columns?.map(item => item.dataIndex )
+  const betaColumTable = columns?.map(item => item.title )
+  contentColumns.push(betaColumTable)
+
+  const betaDataTable = dataTable?.map(item => Object.values(item))
+  csvExport.push(...contentColumns, ...betaDataTable)
 
   const csvReport = {
     filename: 'jarvis-data.csv',
-    headers: columnTable,
-    data: dataTable
+    data: csvExport
   }
 
   useEffect(() => {
